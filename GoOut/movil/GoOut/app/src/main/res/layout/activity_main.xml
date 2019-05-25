@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVerdeGO"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LblBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="70dp"
+        android:text="Bienvenidos a"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LblLogoMain"
+        android:layout_width="153dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:text="GoOut"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblBienvenido" />
+
+    <Button
+        android:id="@+id/BtnCrearCuenta"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/redondeado"
+        android:text="Crear cuenta"
+        android:textColor="@color/colorVerdeGO"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblLogoMain" />
+
+    <Button
+        android:id="@+id/BtnIniSesion"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/redondeado"
+        android:text="Iniciar sesión"
+        android:textSize="16dp"
+        android:textColor="@color/colorVerdeGO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnCrearCuenta" />
+
+    <TextView
+        android:id="@+id/LblPermisoMain"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Al crear una cuenta o al inciar sesión, estoy aceptando los términos de condición y la politica de privacidad de GoOut"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnIniSesion" />
+
+</android.support.constraint.ConstraintLayout>

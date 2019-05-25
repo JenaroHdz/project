@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/LblUbicacion"
+        android:layout_width="166dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Ubicación"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/LblImagenCasa"
+        android:layout_width="199dp"
+        android:layout_height="159dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblUbicacion"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[15]" />
+
+    <TextView
+        android:id="@+id/LblPrecioTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="$ Costo/tiempo"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblImagenCasa" />
+
+    <ImageView
+        android:id="@+id/LblEstrellaOff"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@mipmap/estrellas"
+        app:layout_constraintEnd_toStartOf="@+id/lblEstrellaOff"
+        app:layout_constraintStart_toEndOf="@+id/LblPrecioTiempo"
+        app:layout_constraintTop_toBottomOf="@+id/LblImagenCasa" />
+
+    <ImageView
+        android:id="@+id/lblEstrellaOff4"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@mipmap/estrellas"
+        app:layout_constraintStart_toEndOf="@+id/lblEstrellaOff3"
+        app:layout_constraintTop_toBottomOf="@+id/LblImagenCasa" />
+
+    <ImageView
+        android:id="@+id/lblEstrellaOff3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@mipmap/estrellas"
+        app:layout_constraintEnd_toStartOf="@+id/lblEstrellaOff4"
+        app:layout_constraintStart_toEndOf="@+id/lblEstrellaOff2"
+        app:layout_constraintTop_toBottomOf="@+id/LblImagenCasa" />
+
+    <ImageView
+        android:id="@+id/lblEstrellaOff2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@mipmap/estrellas"
+        app:layout_constraintEnd_toStartOf="@+id/lblEstrellaOff3"
+        app:layout_constraintStart_toEndOf="@+id/lblEstrellaOff"
+        app:layout_constraintTop_toBottomOf="@+id/LblImagenCasa" />
+
+    <ImageView
+        android:id="@+id/lblEstrellaOff"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@mipmap/estrellas"
+        app:layout_constraintEnd_toStartOf="@+id/lblEstrellaOff2"
+        app:layout_constraintStart_toEndOf="@+id/LblEstrellaOff"
+        app:layout_constraintTop_toBottomOf="@+id/LblImagenCasa" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVerdeGO"
+    tools:context=".CrearCuentaActivity">
+
+    <TextView
+        android:id="@+id/LblLogoIniSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="GoOut"
+        android:textColor="@color/colorWhite"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LblISCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="CORREO"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblLogoIniSesion" />
+
+    <EditText
+        android:id="@+id/TxtISCorreo"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/divider"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:hint="ex_example@gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblISCorreo" />
+
+    <TextView
+        android:id="@+id/LblISContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:text="CONTRASEÑA"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtISCorreo" />
+
+    <EditText
+        android:id="@+id/TxtISContrasena"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/divider"
+        android:textSize="16dp"
+        android:hint="Contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblISContrasena" />
+
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/redondeado"
+        android:text="Acceder"
+        android:textColor="@color/colorVerdeGO"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtISContrasena" />
+
+    <TextView
+        android:id="@+id/LblISOlvidasteContra"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:text="¿Olvidaste la contraseña?"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceder" />
+
+
+</android.support.constraint.ConstraintLayout>
